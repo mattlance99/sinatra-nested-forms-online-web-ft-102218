@@ -12,7 +12,10 @@ module FormsLab
     end
     
     post '/pirates' do
-      name
+      name = params[:name]
+      breed = params[:breed]
+      age = params[:age]
+      puppy = Puppy.new(@name, @breed, @age)
       
       erb :'pirates/show'
     end
