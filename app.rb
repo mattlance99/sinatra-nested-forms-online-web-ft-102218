@@ -15,7 +15,7 @@ module FormsLab
       name = params[:name]
       weight = params[:weight]
       height = params[:height]
-      binding.pry
+
       @pirate = Pirate.new(name, weight, height)
       
       params[:pirate][:ships].each do |attributes|
