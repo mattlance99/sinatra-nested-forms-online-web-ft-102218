@@ -13,9 +13,9 @@ module FormsLab
     
     post '/pirates' do
       name = params[:name]
-      breed = params[:breed]
-      age = params[:age]
-      puppy = Puppy.new(@name, @breed, @age)
+      weight = params[:weight]
+      height = params[:height]
+      pirate = Pirate.new(name, weight, height)
       
       erb :'pirates/show'
     end
